@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delcio Cunha - Web Developer & Python Programmer</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/components/base.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/hero.css" />
+    <link rel="stylesheet" href="css/components/music-player.css" />
+    <link rel="stylesheet" href="css/components/sections.css" />
+    <link rel="stylesheet" href="css/components/about.css" />
+    <link rel="stylesheet" href="css/components/skills.css" />
+    <link rel="stylesheet" href="css/components/projects.css" />
+    <link rel="stylesheet" href="css/components/blog.css" />
+    <link rel="stylesheet" href="css/components/experience.css" />
+    <link rel="stylesheet" href="css/components/contact.css" />
+    <link rel="stylesheet" href="css/components/animations.css" />
+    <link rel="stylesheet" href="css/components/awards.css" />
+    <link rel="stylesheet" href="css/components/footer.css" />
+    <link rel="stylesheet" href="css/components/wakatime.css" />
+    <link rel="stylesheet" href="css/components/featured-projects.css" />
+    <link rel="stylesheet" href="css/components/interactive-skills.css" />
+    <link rel="stylesheet" href="css/components/theme.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .theme-switcher-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-toggle {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 600;
+            transition: background-color 0.3s, border-color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .dropdown-toggle:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: var(--bg-card);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 0.5rem;
+            border: 1px solid var(--border-color);
+            padding: 0.5rem 0;
+            right: 0;
+            bottom: 100%;
+            margin-bottom: 0.5rem;
+        }
+
+        .dropdown-menu a {
+            color: var(--text-primary);
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+
+        .dropdown-menu.show {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Barra de progresso de scroll -->
+    <div class="scroll-progress-bar"></div>
+
+    <header id="header-placeholder" class="main-header"></header>
+
+    <main>
+        <!-- ====================================================== -->
+        <!-- Section 1: Hero -->
+        <!-- ====================================================== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container hero-container">
+                <!-- Profile Card (esquerda) -->
+                <div class="profile-card-container animate-on-scroll">
+                    <div class="profile-card glass-card">
+                        <div class="profile-header">
+                            <div class="avatar-wrapper">
+                                <img src="assets/my_image1.jpg" alt="Avatar" class="avatar" />
+                                <div class="status-indicator online"></div>
+                            </div>
+                            <div class="profile-info">
+                                <h2>Delcio Cunha</h2>
+                                <p class="job-title">Web Developer & Python Programmer</p>
+                            </div>
+                        </div>
+                        <div class="profile-details">
+                            <p><i class="fas fa-map-marker-alt"></i> Maianga, Luanda, Angola</p>
+                            <p><i class="fas fa-calendar-alt"></i> 9 de Abril de 2003</p>
+                            <p><i class="fas fa-briefcase"></i> ITEL – Instituto de Telecomunicações</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Text Content (centro) -->
+                <div class="hero-text-content">
+                    <div class="welcome-badge animate-on-scroll">Bem-vindo ao meu Portfólio</div>
+                    <h1 class="animate-on-scroll">
+                        Construindo<br>
+                        <span class="gradient-text">Experiências Digitais</span>
+                    </h1>
+                    <p style="color: white;" class="animate-on-scroll">Técnico em informática apaixonado por
+                        desenvolvimento web full-stack, programação Python e criação de soluções tecnológicas
+                        eficientes e centradas no utilizador.</p>
+                    <div class="hero-buttons animate-on-scroll">
+                        <a href="#projects" class="btn btn-primary">Ver os meus projetos <i
+                                class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-secondary">Entrar em contacto</a>
+                    </div>
+                    <div class="social-links animate-on-scroll">
+                        <a style="color: white;" href="mailto:delciobentocunha007@gmail.com" aria-label="Email"><i
+                                class="fas fa-envelope"></i></a>
+                        <a style="color: white;" href="https://github.com/" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a style="color: white;" href="https://linkedin.com/" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a style="color: white;" href="https://wa.me/244947976103" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down-indicator"></div>
+        </section>
+
+        <div class="music-player-widget">
+            <img src="assets/music/img/Koe no Kiseki.png" alt="Song Cover" class="song-cover" id="song-cover">
+            <div class="song-info">
+                <h4 id="song-title">Koe no Kiseki</h4>
+                <p id="song-artist">Anime Song</p>
+            </div>
+            <div class="player-controls">
+                <i class="fas fa-backward-step" id="prev-btn"></i>
+                <i class="fas fa-play" id="play-pause-btn"></i>
+                <i class="fas fa-forward-step" id="next-btn"></i>
+            </div>
+            <i class="fas fa-volume-high"></i>
+        </div>
+
+        <!-- ====================================================== -->
+        <!-- Section 2: About Me -->
+        <!-- ====================================================== -->
+        <section id="about" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">A minha história</div>
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-image-wrapper animate-on-scroll">
+                        <img src="assets/my_image.jpg" alt="Delcio Cunha">
+                        <div class="status-tag">
+                            <span class="green-dot"></span> Disponível para trabalhar
+                        </div>
+                    </div>
+                    <div class="about-text-content animate-on-scroll">
+                        <p>Sou um Técnico em Informática orientado a resultados, com competências em programação
+                            Python, desenvolvimento web e administração de bases de dados. Tenho experiência prática
+                            no planeamento, desenvolvimento e manutenção de aplicações web completas, integrando
+                            front-end e back-end com foco em desempenho, segurança e usabilidade.</p>
+                        <p>Possuo facilidade em aprender novas tecnologias, trabalhar de forma autónoma e resolver
+                            problemas técnicos de forma lógica e eficiente. Sou motivado a integrar equipas de
+                            tecnologia, contribuindo para o crescimento da empresa enquanto desenvolvo continuamente
+                            as minhas competências técnicas e profissionais.</p>
+                        <div class="info-box-wrapper glass-card">
+                            <div class="info-box">
+                                <div>
+                                    <span class="info-label">Nome</span>
+                                    <p>Delcio Cunha</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Email</span>
+                                    <p>delciobentocunha007@gmail.com</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Localização</span>
+                                    <p>Luanda, Angola</p>
+                                </div>
+                                <div>
+                                    <span class="info-label">Disponibilidade</span>
+                                    <p class="available-status">Aberto a oportunidades</p>
+                                </div>
+                            </div>
+                            <a href="download-resume.html" download class="btn-download-resume">Download CV <i
+                                    class="fas fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 3: Skills -->
+        <!-- ====================================================== -->
+        <section id="skills" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">As minhas competências</div>
+                    <h2 class="section-title">Stack Técnica</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-wrapper">
+                    <div class="skills-grid">
+
+                        <!-- Linguagens de Programação -->
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-python"></i> Python</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                        </div>
+
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-java"></i> Java</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:65%"></div></div>
+                        </div>
+
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-code"></i> C++ / C#</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:60%"></div></div>
+                        </div>
+
+                        <!-- Frontend -->
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-html5"></i> HTML5</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+                        </div>
+
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-css3-alt"></i> CSS3</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+                        </div>
+
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fab fa-js"></i> JavaScript</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div>
+                        </div>
+
+                        <!-- Backend & Frameworks -->
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-layer-group"></i> Django</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+                        </div>
+
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-database"></i> SQL / PostgreSQL</span>
+                                <span class="skill-percent">78%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:78%"></div></div>
+                        </div>
+
+                        <div class="skill-item glass-card animate-on-scroll">
+                            <div class="skill-header">
+                                <span class="skill-name"><i class="fas fa-plug"></i> APIs REST</span>
+                                <span class="skill-percent">72%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" style="width:72%"></div></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <style>
+                    .skill-item { padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+                    .skill-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+                    .skill-name { font-weight: 600; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem; }
+                    .skill-name i { color: var(--accent-color, #6c63ff); }
+                    .skill-percent { font-size: 0.85rem; opacity: 0.7; font-weight: 500; }
+                    .skill-bar { background: rgba(255,255,255,0.1); border-radius: 999px; height: 8px; overflow: hidden; }
+                    .skill-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #6c63ff, #a78bfa); transition: width 1s ease; }
+                </style>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 4: Featured Projects -->
+        <!-- ====================================================== -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Alguns dos meus trabalhos recentes</div>
+                    <h2 class="section-title">Projetos em Destaque</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- PROJECT 1: Urbanda -->
+                <div class="project-showcase-grid animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>Projeto Urbanda</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>URBANDA<br>PLATAFORMA SOCIAL</h1>
+                                <h4 class="feature-title">FUNCIONALIDADES</h4>
+                                <ul>
+                                    <li>Plataforma de denúncias sociais de problemas ao patrimônio público.</li>
+                                    <li>Desenvolvida com Django e PostgreSQL para gestão eficiente de denúncias.</li>
+                                    <li>Sistema de autenticação de utilizadores e painel de administração.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/omacha/Home1.jpg" alt="Urbanda Homepage" class="showcase-img">
+                                <img src="assets/omacha/product_detail.jpg" alt="Urbanda Dashboard" class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>Urbanda</h2>
+                        <p class="project-category">Web, Full-stack, Social Platform</p>
+                        <div class="project-tags">
+                            <span>Django</span><span>PostgreSQL</span><span>Python</span><span>HTML/CSS</span>
+                        </div>
+                        <div class="description-box glass-card">
+                            <p>Plataforma social de denúncias ao patrimônio público, desenvolvida como projeto de final
+                                de curso no ITEL, Luanda.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Project Details"><i class="fas fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2: ADANA -->
+                <div class="project-showcase-grid layout-reversed animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>Projeto ADANA</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>ADANA<br>ASSISTENTE VIRTUAL</h1>
+                                <h4 class="feature-title">FUNCIONALIDADES</h4>
+                                <ul>
+                                    <li>Assistente virtual controlado por comando de voz em Python.</li>
+                                    <li>Módulos de reconhecimento de voz utilizando bibliotecas Python específicas.</li>
+                                    <li>Integração com APIs de voz para processamento de linguagem natural.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/brickshop/homepage.png" alt="ADANA Interface" class="showcase-img">
+                                <img src="assets/brickshop/admin_dashboard.png" alt="ADANA Demo" class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>ADANA</h2>
+                        <p class="project-category">Python, APIs de Voz, AI</p>
+                        <div class="project-tags">
+                            <span>Python</span><span>APIs de Voz</span><span>SpeechRecognition</span>
+                        </div>
+                        <div class="description-box glass-card">
+                            <p>Assistente virtual por comando de voz, com módulos de reconhecimento e processamento de
+                                fala utilizando bibliotecas Python especializadas.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3: Pixelverse -->
+                <div class="project-showcase-grid animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>Projeto Pixelverse</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>PIXELVERSE<br>CULTURA POP</h1>
+                                <h4 class="feature-title">FUNCIONALIDADES</h4>
+                                <ul>
+                                    <li>Página de cultura pop com gestão de conteúdo e redes sociais.</li>
+                                    <li>Criação e atualização de conteúdo relevante para o público-alvo.</li>
+                                    <li>Estratégia de engajamento no Facebook com crescimento orgânico.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/home_aptis.png" alt="Pixelverse Page" class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>Pixelverse</h2>
+                        <p class="project-category">Social Media, Content Management</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Facebook</span>
+                        </div>
+                        <div class="description-box glass-card">
+                            <p>Página de cultura pop no Facebook com criação e curadoria de conteúdo para engajamento
+                                do público-alvo angolano.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><i
+                                    class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PROJECT 4: Páginas Web Independentes -->
+                <div class="project-showcase-grid layout-reversed animate-on-scroll">
+                    <div class="showcase-card">
+                        <div class="showcase-header"><span>Projetos Web Independentes</span></div>
+                        <div class="showcase-content">
+                            <div class="text-features">
+                                <h1>PÁGINAS WEB<br>RESPONSIVAS</h1>
+                                <h4 class="feature-title">FUNCIONALIDADES</h4>
+                                <ul>
+                                    <li>Desenvolvimento de páginas web responsivas para projetos independentes.</li>
+                                    <li>Implementação com HTML5, CSS3 e JavaScript puro.</li>
+                                    <li>Design adaptado para diferentes dispositivos e ecrãs.</li>
+                                </ul>
+                            </div>
+                            <div class="image-gallery">
+                                <img src="assets/home_unidocs.png" alt="Web Project" class="showcase-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details-column">
+                        <h2>Web Projects</h2>
+                        <p class="project-category">Web, Frontend, Responsive</p>
+                        <div class="project-tags">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                        </div>
+                        <div class="description-box glass-card">
+                            <p>Coleção de páginas web responsivas desenvolvidas para clientes e projetos
+                                independentes, focadas em usabilidade e design moderno.</p>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/" target="_blank" aria-label="GitHub"><i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="view-all-posts-container animate-on-scroll" style="margin-top: 4rem;">
+                <a href="project.html" class="btn btn-secondary">
+                    Ver Todos os Projetos <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 5: Awards & Achievements -->
+        <!-- ====================================================== -->
+        <section id="awards" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Reconhecimentos e Conquistas</div>
+                    <h2 class="section-title">Conquistas</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="award-card glass-card animate-on-scroll">
+                    <div class="award-info">
+                        <p class="award-date">Mai 2025</p>
+                        <h3 class="award-title">Conclusão do Curso Técnico</h3>
+                        <p class="award-competition">'Ensino Médio – Técnico em Informática'</p>
+                        <p class="award-issuer">Instituto de Telecomunicações (ITEL), Luanda</p>
+                    </div>
+                    <div class="award-description">
+                        <ul>
+                            <li>
+                                Desenvolveu a plataforma Urbanda como projeto de final de curso — uma solução web
+                                completa de denúncias sociais ao patrimônio público.
+                            </li>
+                            <li>
+                                Adquiriu competências sólidas em programação Python, Django, SQL e desenvolvimento
+                                web full-stack ao longo de 7 anos de formação.
+                            </li>
+                            <li>
+                                Demonstrou capacidade de trabalho autônomo, pensamento lógico e resolução de
+                                problemas em contextos tecnológicos reais.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 6: Experience & Education -->
+        <!-- ====================================================== -->
+        <section id="experience" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">A minha jornada profissional</div>
+                    <h2 class="section-title">Experiência & Formação</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="timeline">
+                    <!-- Timeline Item 1: Educação -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Ensino Médio – Técnico em Informática</h3>
+                            <p class="timeline-meta">Instituto de Telecomunicações (ITEL), Luanda | Jan 2018 – Mai 2025</p>
+                            <p>Formação técnica em programação, desenvolvimento web e bases de dados. Projeto de final
+                                de curso: plataforma Urbanda (Django + PostgreSQL). Fundamentos sólidos em SQL,
+                                frameworks web modernos e desenvolvimento de aplicações completas.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 2: Projetos Independentes -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Responsável por Projetos Independentes</h3>
+                            <p class="timeline-meta">Freelance | Atual</p>
+                            <p>Desenvolvimento e manutenção de projetos web e Python de forma autônoma, incluindo
+                                Urbanda (Django + PostgreSQL), ADANA (assistente virtual por voz), Pixelverse
+                                (gestão de conteúdo digital) e páginas web responsivas para clientes independentes.</p>
+                        </div>
+                    </div>
+                    <!-- Timeline Item 3: Skills em Desenvolvimento -->
+                    <div class="timeline-item animate-on-scroll">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content glass-card">
+                            <h3>Desenvolvimento Contínuo de Competências</h3>
+                            <p class="timeline-meta">Autodidata | 2022 – Presente</p>
+                            <p>Aprendizagem contínua em Python, Java, C++, C#, HTML, CSS, JavaScript, SQL, Django e
+                                APIs REST. Fluente em Português, com bom nível de Inglês e Espanhol, permitindo
+                                acesso a recursos técnicos internacionais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 7: Blog -->
+        <!-- ====================================================== -->
+        <section id="blog" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Partilhando o meu conhecimento</div>
+                    <h2 class="section-title">Do Blog (Em Construção)</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="blog-grid">
+                    <!-- Blog 1 -->
+                    <a href="blog/django-postgresql.html" class="blog-post-card glass-card animate-on-scroll">
+                        <div class="blog-card-image">
+                            <img src="assets/mixamo.png" alt="Django e PostgreSQL">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-tags">
+                                <span>Django</span><span>PostgreSQL</span><span>Python</span>
+                            </div>
+                            <h3>Como Criar uma App Web com Django e PostgreSQL</h3>
+                            <p>Guia prático para configurar um projeto Django com PostgreSQL, desde a instalação até
+                                ao deployment da aplicação.</p>
+                            <span class="blog-card-link">Ler Mais <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Blog 2 -->
+                    <a href="blog/python-voice.html" class="blog-post-card glass-card animate-on-scroll">
+                        <div class="blog-card-image">
+                            <img src="assets/unity-githubpage.png" alt="Python Voice Recognition">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-tags">
+                                <span>Python</span><span>APIs de Voz</span>
+                            </div>
+                            <h3>Reconhecimento de Voz com Python: Guia de Iniciantes</h3>
+                            <p>Aprenda a usar bibliotecas Python para criar aplicações que reconhecem e processam
+                                comandos de voz em tempo real.</p>
+                            <span class="blog-card-link">Ler Mais <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+
+                    <!-- Blog 3 -->
+                    <a href="blog/responsive-web.html" class="blog-post-card glass-card animate-on-scroll">
+                        <div class="blog-card-image">
+                            <img src="assets/docker.png" alt="Responsive Web Design">
+                        </div>
+                        <div class="blog-card-content">
+                            <div class="blog-card-tags">
+                                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            </div>
+                            <h3>Construindo Páginas Web Responsivas do Zero</h3>
+                            <p>Boas práticas para desenvolver sites que funcionam perfeitamente em todos os
+                                dispositivos, usando apenas HTML, CSS e JavaScript.</p>
+                            <span class="blog-card-link">Ler Mais <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="view-all-posts-container animate-on-scroll">
+                    <a href="blog.html" class="btn btn-secondary">Ver Todos os Artigos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ====================================================== -->
+        <!-- Section 8: Contact -->
+        <!-- ====================================================== -->
+        <section id="contact" class="content-section">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <div class="section-badge">Vamos trabalhar juntos</div>
+                    <h2 class="section-title">Entre em Contacto</h2>
+                    <div class="title-underline"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info-wrapper glass-card animate-on-scroll">
+                        <h3>Informações de Contacto</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span>Email</span>
+                                <a href="mailto:delciobentocunha007@gmail.com">delciobentocunha007@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span>Telefone / WhatsApp</span>
+                                <a href="https://wa.me/244947976103" target="_blank">+244 947 976 103</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span>Localização</span>
+                                <a href="#">Rua Marien Ngoabi, Maianga, Luanda</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-github"></i>
+                            <div>
+                                <span>GitHub</span>
+                                <a href="https://github.com/" target="_blank">github.com/delciocunha</a>
+                            </div>
+                        </div>
+                        <h3 class="status-title">Estado Atual</h3>
+                        <div class="contact-status">
+                            <span class="green-dot"></span>
+                            Disponível para oportunidades de emprego em Tecnologia
+                        </div>
+                    </div>
+                    <!-- Formulário de contacto -->
+                    <form class="contact-form glass-card animate-on-scroll" action="https://formspree.io" method="POST">
+                        <h3>Enviar Mensagem</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="O seu Nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="O seu Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Assunto" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="A sua Mensagem"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem <i
+                                class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer-placeholder" class="main-footer"></footer>
+
+    <div id="pdfModal" class="pdf-modal-overlay">
+        <div class="pdf-modal-container">
+            <div class="pdf-modal-header">
+                <h3 id="pdfModalTitle">Certificate Viewer</h3>
+                <button class="pdf-modal-close">&times;</button>
+            </div>
+            <div class="pdf-modal-body">
+                <div class="zoom-container">
+                    <img id="certImage" src="" alt="Certificate">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-source"></audio>
+    <script src="js/playlist.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/load-components.js"></script>
+    <script src="js/load-sections.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const snowContainer = document.querySelector('.snow-container');
+            if (snowContainer) {
+                for (let i = 0; i < 150; i++) {
+                    const snowflake = document.createElement('div');
+                    snowflake.classList.add('snowflake');
+                    const size = Math.random() * 4 + 2;
+                    snowflake.style.width = size + 'px';
+                    snowflake.style.height = size + 'px';
+                    snowflake.style.left = Math.random() * 100 + 'vw';
+                    snowflake.style.animationDelay = Math.random() * -10 + 's';
+                    snowflake.style.animationDuration = 5 + Math.random() * 5 + 's';
+                    snowflake.style.opacity = Math.random();
+                    snowContainer.appendChild(snowflake);
+                }
+            }
+
+            const dropdownToggle = document.querySelector('.theme-switcher-dropdown .dropdown-toggle');
+            const dropdownMenu = document.querySelector('.theme-switcher-dropdown .dropdown-menu');
+
+            if (dropdownToggle && dropdownMenu) {
+                dropdownToggle.addEventListener('click', () => {
+                    dropdownMenu.classList.toggle('show');
+                });
+
+                window.addEventListener('click', (event) => {
+                    if (!event.target.matches('.dropdown-toggle') && !event.target.matches('.dropdown-toggle i')) {
+                        if (dropdownMenu.classList.contains('show')) {
+                            dropdownMenu.classList.remove('show');
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
